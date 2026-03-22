@@ -1,0 +1,159 @@
+body{
+    --culoare-fundal: #C2F0D3;
+    --culoare-contur: #31EB75;
+    --culoare3: #31E3EB;
+    --culoare-iconite: #44EB49;
+    --culoare-hover: #5EEBC1;
+    --margine-pagina:100px;
+    background-color: var(--culoare-fundal);
+}
+
+main{
+    margin-left: var(--margine-pagina);
+    margin-right: var(--margine-pagina);
+}
+
+#grid-pagina > *{
+    border:1px solid var(--culoare-contur);
+
+}
+
+#grid-pagina{
+    display:grid;
+    gap: 10px;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas: "welcome welcome welcome welcome"
+                         "evenimente TopProduse TopProduse anunturi"
+                         "fig1 fig1 fig1 fig1"
+                         "fig2 fig2 fig2 produse"
+                         "fig3 promotii promotii promotii"
+                         "index-intrebari index-intrebari index-intrebari index-intrebari";
+}
+
+ 
+#welcome{
+    grid-area: welcome;
+}
+#promotii{
+    grid-area: promotii;
+}
+#anunturi{
+    grid-area: anunturi;
+}
+#evenimente{
+    grid-area: evenimente;
+}
+#TopProduse{
+    grid-area: TopProduse;
+}
+ 
+#fig1{
+    grid-area: fig1;
+}
+#fig2{
+    grid-area: fig2;
+}
+#fig3{
+    grid-area: fig3;
+}
+#produse{
+    grid-area: produse;
+}
+#index-intrebari{
+    grid-area: index-intrebari;
+}
+
+figure{
+    margin: 0;
+}
+
+figure.fg-img > img{
+    width:100%
+}
+
+.bonbon-regular {
+    font-family: "Bonbon", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*.taburi-iframe > a{
+    display: inline-block;
+    padding: 10px;
+    background-color: var(--culoare-fundal);
+    border: 1px solid var(--culoare-contur);
+    color: black;
+    text-decoration: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right: 10px;
+}
+*/
+
+.container-iframe {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* video */
+.container-iframe iframe {
+    width: 560px;
+    height: 315px;
+
+}
+
+/* butoanele în dreapta, lipite de video */
+.taburi-iframe {
+    display: flex;
+    flex-direction: column;
+}
+
+/* stil butoane */
+.taburi-iframe a {
+    text-decoration: none;
+    background-color: var(--culoare-iconite);
+    color: white;
+    padding: 12px 20px;
+    margin: 0;
+    border-radius: 0 5px 5px 0; /* rotunjit doar în dreapta */
+    width: 75px; /* dimensiune fixă de bază */
+    text-align: center ; /* 🔥 textul stă în dreapta */
+    overflow: hidden;
+    
+    /* IMPORTANT pentru animație */
+    transition: all 0.8s ease;
+    transform-origin: left;
+}
+
+/* hover - efect de "extindere" */
+.taburi-iframe a:hover {
+    width: 100px; /* crește în dreapta */
+    background-color: var(--culoare-contur);
+}
+
+@media screen and (max-witdh:1200px) {
+    body{
+        --margine-pagina:80px;
+    }
+
+    #grid-pagina{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "welcome welcome welcome"
+                         "evenimente TopProduse anunturi"
+                         "fig1 fig1 fig1"
+                         "fig2 fig2 produse"
+                         "fig3 promotii promotii"
+                         "index-intrebari index-intrebari index-intrebari";
+}
+}
+
+@media screen and (max-witdh:700px) {
+    body{
+        --margine-pagina:50px;
+    }
+
+    grid-pagina{
+        display: block;
+    }
+}
+
