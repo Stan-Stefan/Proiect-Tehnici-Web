@@ -3,6 +3,10 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/resurse/css/general.css">
+    <link rel="stylesheet" href="/resurse/css/nav.css">
+    <link rel="stylesheet" href="/resurse/css/nav1000.css" media="screen and (max-diwth: 1000px)">
+    <link rel="stylesheet" href="/resurse/css/nav700.css" media="screen and (max-diwth: 700px)">
     <title>RacketShot - Magazin tenis</title>
     <meta name="author" content="Stefan Stan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +19,19 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/resurse/imagini/ico/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="MyWebSite" />
     <link rel="manifest" href="/resurse/imagini/ico/site.webmanifest" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
+    <div id="top"></div>
     <header class="c1" id="titlu">
         <nav>
+            <label id="hamburger" for="ch-menu">
+                <img src="/resurse/imagini/Hamburger_icon_alb.png" alt="menu">    
+            </label>
+            <input type="checkbox" id="ch-menu"/>
             <ul class="meniu">
                 <li>
                     <div class="text-icon" id="acasa">Acasă</div>
@@ -27,12 +39,12 @@
                         <span class="fas fa-regular fa-house"></span>
                     </div>
                     <ul>
-                        <li><a href="#welcome">Bine ați venit</a></li>
-                        <li><a href="#promotii">Promoții</a></li>
-                        <li><a href="#anunturi">Anunțuri</a></li>
-                        <li><a href="#produse">Ofertă</a></li>
-                        <li><a href="#index-intrebari">Întrebări</a></li>
-                        <li><a href="#videoclipuri">Videoclipuri</a></li>
+                        <li><a href="#zona1">Bine ați venit</a></li>
+                        <li><a href="#zona5">Promoții</a></li>
+                        <li><a href="#zona4">Anunțuri</a></li>
+                        <li><a href="#zona5">Ofertă</a></li>
+                        <li><a href="#zona6">Întrebări</a></li>
+                        <li><a href="#zona8">Videoclipuri</a></li>
                     </ul>
                 </li>
                 <li>
@@ -66,50 +78,47 @@
     </header>
     <main>
         <div id="grid-pagina">
-            <section id="welcome">
-                <hgroup>
-                    <h2>Bine ați venit</h2>
-                    <p class="subtitlu">Prezentarea magazinului</p>
-                </hgroup>
+            <section id="zona1">
+                <div class="text">
+                    <hgroup>
+                        <h2>Bine ați venit</h2>
+                        <p class="subtitlu">Prezentarea magazinului</p>
+                    </hgroup>
 
-                <p class="intro">Bine ați venit la RacketShot, magazinul online dedicat pasionaților de tenis. Aici
-                    găsiți rachete, echipament și accesorii pentru toate nivelurile de joc.</p>
+                    <p class="intro">Bine ai venit la RacketShot, magazin tenis online dedicat tuturor pasionaților de sport și performanță. În magazinul nostru vei găsi o gamă variată de produse, de la rachetă de tenis și mingi, până la îmbrăcăminte tenis, adidași tenis și genți special concepute pentru transportul echipamentului.<br>
+                    <div class="intro-oferte">
+                        <div>Rachete</div>
+                        <div>Mingi</div>
+                        <div>Îmbrăcăminte</div>
+                        <div>Pantofi</div>
+                        <div>Accesorii</div>
+                    </div>
 
-                <div class="intro-oferte">
-                    <div>Rachete</div>
-                    <div>Mingi</div>
-                    <div>Îmbrăcăminte</div>
-                    <div>Pantofi</div>
-                    <div>Accesorii</div>
+                    <p><a href="https://www.atptour.com" target="_blank">Aici</a>
+                    puteți afla informații despre jucătorii favoriți.</p>
+
                 </div>
                 <div id="dv-prezentare-1">
                     <div id="dv-prezentare">
                         <figure>
-                            <picture>
-                                <source srcset="./resurse/imagini/favicon-96x96.png" media="(max-width:700px)" />
-                                <source srcset="./resurse/imagini/web-app-manifest-192x192.png"
-                                    media="(max-width:1200px)" />
-                                <img src="./resurse/imagini/web-app-manifest-512x512.png" alt="teren" title="Un teren de tenis" style="width:50%">
-                            </picture>
-                            <figcaption>Teren de tenis</figcaption>
+                            <a href="/resurse/imagini/tenis1.jpg" download="tenis1.jpg">
+                                <picture>
+                                    <source srcset="/resurse/imagini/tenis3.png" media="(max-width:700px)" />
+                                    <source srcset="/resurse/imagini/tenis2.jpg"
+                                        media="(max-width:1200px)" />
+                                    <img src="/resurse/imagini/tenis1.jpg" alt="teren" title="O racheta cu o minge de tenis" style="width:100%">
+                                </picture>
+                            <br>Descarca imagine
+                            </a>
+                            <figcaption>Racheta de tenis</figcaption>
                         </figure>
+                        <a href="https://en.wikipedia.org/wiki/Tennis#History_of_tennis_rackets_and_string_technology_evolution_in_modern_professional_tennis">
+                        https://en.wikipedia.org/wiki/Tennis#History_of_tennis_rackets_<wbr>and_string_technology_evolution_in_modern_professional_tennis
+                        </a>
                     </div>
                 </div>
-
-                <p><a href="https://www.atptour.com" target="_blank">Aici</a>
-                puteți afla informații despre jucătorii favoriți.</p>
-
-                <hr class="Rachete" />
-                <figure>
-                    <img style="width:50%" class="racheta" src="resurse/imagini/tenis2.jpg" alt="racheta">
-                </figure>
-
-                <a href="https://en.wikipedia.org/wiki/Tennis#History_of_tennis_rackets_and_string_technology_evolution_in_modern_professional_tennis">
-                    https://en.wikipedia.org/wiki/Tennis#History_of_tennis_rackets_<wbr>and_string_technology_evolution_in_modern_professional_tennis
-                </a>
-
             </section>
-            <section id="promotii">
+            <section id="zona5">
                 <h2>Promoții și oferte</h2>
                 <article>
                     <h3 class="titlu">Super ofertă de weekend</h3>
@@ -138,173 +147,163 @@
                         <dt>6. Amortizoare vibrații</dt>
                         <dd>Reduc vibrațiile la impactul cu mingea.</dd>
                     </dl>
-
                 </article>
             </section>
-            <section id="produse">
+            <section id="zona7">
                 <h2>Produsele noastre</h2>
-                <section>
-                    <h3>Rachete tenis</h3>
-                    <p>Avem rachete pentru:</p>
-                    <ul>
-                        <li>adulți</li>
-                        <li>copii</li>
-                        <li>începători</li>
-                        <li>avansați</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Îmbrăcăminte</h3>
-                    <p>Avem tot ce ai nevoie pentru echipamentul complet:</p>
-                    <ul>
-                        <li>tricouri</li>
-                        <li>pantaloni</li>
-                        <li>fuste</li>
-                        <li>trening</li>
-                        <li>jachete</li>
-                        <li>bluze</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Pantofi</h3>
-                    <p>Avem pantofi pentru:</p>
-                    <ul>
-                        <li>suprafață de zgură</li>
-                        <li>suprafață de hard</li>
-                        <li>toate suprafețele</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Accesorii</h3>
-                    <p>Avem accesorii precum:</p>
-                    <ul>
-                        <li>gripuri</li>
-                        <li>racordaje</li>
-                        <li>amortizoare vibrații</li>
-                        <li>genți</li>
-                        <li>huse rachete</li>
-                        <li>mingi</li>
-                        <li>șepci</li>
-                    </ul>
-                </section>
+                <div class="produse-grid">
+                    <section>
+                        <h3>Rachete tenis</h3>
+                        <p>Avem rachete pentru:</p>
+                        <ul>
+                            <li>adulți</li>
+                            <li>copii</li>
+                            <li>începători</li>
+                            <li>avansați</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Îmbrăcăminte</h3>
+                        <p>Avem tot ce ai nevoie pentru echipamentul complet:</p>
+                        <ul>
+                            <li>tricouri</li>
+                            <li>pantaloni</li>
+                            <li>fuste</li>
+                            <li>trening</li>
+                            <li>jachete</li>
+                            <li>bluze</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Pantofi</h3>
+                        <p>Avem pantofi pentru:</p>
+                        <ul>
+                            <li>suprafață de zgură</li>
+                            <li>suprafață de hard</li>
+                            <li>toate suprafețele</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Accesorii</h3>
+                        <p>Avem accesorii precum:</p>
+                        <ul>
+                            <li>gripuri</li>
+                            <li>racordaje</li>
+                            <li>amortizoare vibrații</li>
+                            <li>genți</li>
+                            <li>huse rachete</li>
+                            <li>mingi</li>
+                            <li>șepci</li>
+                        </ul>
+                    </section>
+                </div>
+                <p>Stoc:</p>
+
+                <meter value="10" min="0" max="10" low="3" high="8" optimum="10"></meter>
+
             </section>
+            <section id="zona2">
+                <h2>Cele mai populare produse</h2>
+                <div class="tabel-scroll">
+                    <table id="tabel">
+                        <caption>Cele mai populare produse</caption>
 
-            <p>Stoc:</p>
+                        <thead>
+                            <tr>
+                                <th>Produs</th>
+                                <th>Tip</th>
+                                <th>Preț</th>
+                                <th>Disponibilitate</th>
+                            </tr>
+                        </thead>
 
-            <meter value="10" min="0" max="10" low="3" high="8" optimum="10"></meter>
+                        <tbody>
+                            <tr>
+                                <td>Rachetă Wilson Blade 25 V9.0</td>
+                                <td>Avansați</td>
+                                <td>500 lei</td>
+                                <td>În stoc</td>
+                            </tr>
 
-            <figure id="fig1" class="fg-img">
-                <img src="resurse/imagini/racheta1.png" alt="rachete" height="300" width="175">
-                <figcaption>Rachetă Head Radical Team L</figcaption>
-            </figure>
-            <figure id="fig2" class="fg-img">
-                <img src="resurse/imagini/racheta2.jpg" alt="rachete" height="300" width="250">
-                <figcaption>Rachetă Wilson Blade 25 V9.0</figcaption>
-            </figure>
-            <a href="resurse/imagini/racheta3.jpg">
-                <img src="resurse/imagini/racheta3.jpg" alt="rachete" height="300" width="175">
-            </a>
-            <a href="resurse/imagini/racheta1.jpg" download="racheta_descarcata.jpg">
-                Descarcă imagine
-            </a>
+                            <tr>
+                                <td>Mingi tenis Dunlop</td>
+                                <td>Set 3</td>
+                                <td>30 lei</td>
+                                <td>În stoc</td>
+                            </tr>
 
-            <table>
-                <caption>Cele mai populare produse</caption>
+                            <tr>
+                                <td>Pantofi Court FF3 Asics</td>
+                                <td>Zgură</td>
+                                <td>350 lei</td>
+                                <td>În stoc</td>
+                            </tr>
 
-                <thead>
-                    <tr>
-                        <th>Produs</th>
-                        <th>Tip</th>
-                        <th>Preț</th>
-                        <th>Disponibilitate</th>
-                    </tr>
-                </thead>
+                            <tr>
+                                <td rowspan="2">Grip Head</td>
+                                <td>Standard</td>
+                                <td>20 lei</td>
+                                <td>În stoc</td>
+                            </tr>
 
-                <tbody>
-                    <tr>
-                        <td>Rachetă Wilson Blade 25 V9.0</td>
-                        <td>Avansați</td>
-                        <td>500 lei</td>
-                        <td>În stoc</td>
-                    </tr>
+                            <tr>
+                                <td>Pro</td>
+                                <td>35 lei</td>
+                                <td>În stoc</td>
+                            </tr>
+                        </tbody>
 
-                    <tr>
-                        <td>Mingi tenis Dunlop</td>
-                        <td>Set 3</td>
-                        <td>30 lei</td>
-                        <td>În stoc</td>
-                    </tr>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">Produsele sunt disponibile în limita stocului disponibil.</td>
+                            </tr>
+                        </tfoot>
 
-                    <tr>
-                        <td>Pantofi Court FF3 Asics</td>
-                        <td>Zgură</td>
-                        <td>350 lei</td>
-                        <td>În stoc</td>
-                    </tr>
-
-                    <tr>
-                        <td rowspan="2">Grip Head</td>
-                        <td>Standard</td>
-                        <td>20 lei</td>
-                        <td>În stoc</td>
-                    </tr>
-
-                    <tr>
-                        <td>Pro</td>
-                        <td>35 lei</td>
-                        <td>În stoc</td>
-                    </tr>
-                </tbody>
-
-                <tfoot>
-                    <tr>
-                        <td colspan="4">Produsele sunt disponibile în limita stocului disponibil.</td>
-                    </tr>
-                </tfoot>
-
-            </table>
-
-            <section id="anunturi">
+                    </table>
+                </div>
+            </section>
+            <section id="zona4">
                 <h2 class="fg-img">Anunțuri</h2>
-                <section id="evenimente">
-                    <h2>Evenimente și oferte speciale</h2>
-
-                    <ul>
-
-                        <li>
-                            <time datetime="2026-04-10T12:00">10 aprilie ora 12:00</time>,
-                            <b>Mingi de tenis cadou</b> - oferim primilor 100 de clienți
-                            care comandă o rachetă câte un set de mingi gratuit, în limita stocului disponibil.
-                        </li>
-
-                        <li>
-                            <time datetime="2026-05-01T10:00">1 mai ora 10:00</time>,
-                            <b>Lansare rachetă ediție limitată</b> - adăugăm în magazin o rachetă
-                            de tenis ediție limitată disponibilă.
-                        </li>
-
-                        <li>
-                            <time datetime="2026-05-15T09:00">15 mai ora 09:00</time>,
-                            <b>Reducere la accesorii</b> - toate accesoriile pentru tenis
-                            vor avea reducere de 20% pe parcursul zilei.
-                        </li>
-
-                        <li>
-                            <time datetime="2026-06-01T11:00">1 iunie ora 11:00</time>,
-                            <b>Cadou pentru clienți</b> - la orice comandă peste 800 lei
-                            oferim o husă pentru rachete gratuită, în limita stocului disponibil.
-                        </li>
-
-                    </ul>
-
-                </section>
                 <p><time datetime="2025-07-20">20 iulie 2025</time> <strong>ATENTIE!!!</strong> Am adăugat o nouă
                     colecție de rachete pentru sezonul 2025.</p>
                 <p><time datetime="2024-05-05">5 mai 2024</time> Reduceri speciale la mingile de tenis.</p>
                 <p><time datetime="2024-03-10">10 martie 2024</time> Am adăugat echipamente noi pentru jucători
                     începători.</p>
+                <i class="fa-solid fa-bolt fa-bounce"></i> Reduceri speciale azi!
             </section>
-            <section id="index-intrebari">
+            <section id="zona3">
+                <h2>Evenimente și oferte speciale</h2>
+
+                <ul>
+
+                    <li>
+                        <time datetime="2026-04-10T12:00">10 aprilie ora 12:00</time>,
+                        <b>Mingi de tenis cadou</b> - oferim primilor 100 de clienți
+                        care comandă o rachetă câte un set de mingi gratuit, în limita stocului disponibil.
+                    </li>
+
+                    <li>
+                        <time datetime="2026-05-01T10:00">1 mai ora 10:00</time>,
+                        <b>Lansare rachetă ediție limitată</b> - adăugăm în magazin o rachetă
+                        de tenis ediție limitată disponibilă.
+                    </li>
+
+                    <li>
+                        <time datetime="2026-05-15T09:00">15 mai ora 09:00</time>,
+                        <b>Reducere la accesorii</b> - toate accesoriile pentru tenis
+                        vor avea reducere de 20% pe parcursul zilei.
+                    </li>
+
+                    <li>
+                        <time datetime="2026-06-01T11:00">1 iunie ora 11:00</time>,
+                        <b>Cadou pentru clienți</b> - la orice comandă peste 800 lei
+                        oferim o husă pentru rachete gratuită, în limita stocului disponibil.
+                    </li>
+
+                </ul>
+
+            </section>
+            <section id="zona6">
                 <h2>Întrebări frecvente</h2>
                 <details>
                     <summary>Ce rachetă ar trebui să aleagă un începător?</summary>
@@ -321,69 +320,70 @@
                         rachete.!</p>
                 </details>
             </section>
-
-        </div>
-        <section id="galerie-statica">
-            <h2>Galerie</h2>
-            <div id="grid-galerie">
-                <figure>
-                    <div>
-                        <img src="resurse/imagini/racheta1.jpg" alt="rachete" height="250" width="200">
-                    </div>
-                    <figcaption>Rachete</figcaption>
-                </figure>
-                <figure>
-                    <img src="resurse/imagini/pantofi1.png" alt="pantofi" height="250" width="300">
-                    <figcaption>Pantofi Tenis Asics Court FF 3 Novak Clay Night Black/Prism Gold</figcaption>
-                </figure>
-                <figure>
-                    <img src="resurse/imagini/imbracaminte1.jpg" alt="imbracaminte" height="300" width="275">
-                    <figcaption>Yonex YM 0029 - Tricou tenis bărbați</figcaption>
-                </figure>
-                <figure>
-                    <img src="resurse/imagini/mingi1.jpg" alt="accesori" height="300" width="300">
-                    <figcaption>Mingi Dunlop Fort Clay Court 4/set</figcaption>
-                </figure>
-                <figure>
-                    <img src="resurse/imagini/mingi2.jpg" alt="accesorii" height="300" width="300">
-                    <figcaption>Mingi tenis Wilson RG Clay 4 mingi/cutie</figcaption>
-                </figure>
-                <figure>
-                    <img src="resurse/imagini/grip1.jpg" alt="acceosrii" height="300" width="300">
-                    <figcaption>Grip tenis Head EXTREME SOFT Roșu</figcaption>
-                </figure>
-            </div>
-        </section>
-        <section id="videoclipuri">
-            <h2>Videoclipuri</h2>
-            <p>Dacă sunteți pasionați de tenis și doriți să vă îmbunătățiți jocul, vă recomandăm următoarele
-                videoclipuri.
-                Aici puteți învăța tehnici de bază precum serviciul, <i>forehand</i>-ul și <i>backhand</i>-ul.
-                Aceste exerciții sunt <s>ușoare</s> si utile atât pentru începători, cât și pentru jucători mai avansați
-                care vor să își perfecționeze loviturile.&#128513;</p>
-            <div class="container-iframe">
-                <div class="taburi-iframe">
-                    <a href="https://www.youtube.com/embed/IiRGdagtOKE?si=aoafuU-1LMY8f3Se"
-                        target="ifr-video">Serviciul</a>
-                    <a href="https://www.youtube.com/embed/5arVdubK9Pg?si=0akp5UxVOisi5k2R" target="ifr-video">Lovitura
-                        de forehand</a>
-                    <a href="https://www.youtube.com/embed/Ulk_gXK9GrI?si=g_V8uhSZhmUGfpD5" target="ifr-video">Lovitura
-                        de backhand</a><br />
+            <section id="zona8">
+                <h2>Galerie</h2>
+                <div id="grid-galerie">
+                    <figure id="fig1" class="fg-img">
+                        <img src="/resurse/imagini/racheta1.png" alt="rachete" height="300" width="175">
+                        <figcaption>Rachetă Head Radical Team L</figcaption>
+                    </figure>
+                    <figure id="fig2" class="fg-img">
+                        <img src="/resurse/imagini/racheta2.jpg" alt="rachete" height="300" width="250">
+                        <figcaption>Rachetă Wilson Blade 25 V9.0</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/resurse/imagini/pantofi1.png" alt="pantofi" height="250" width="300">
+                        <figcaption>Pantofi Tenis Asics Court FF 3 Novak Clay Night Black/Prism Gold</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/resurse/imagini/imbracaminte1.jpg" alt="imbracaminte" height="300" width="275">
+                        <figcaption>Yonex YM 0029 - Tricou tenis bărbați</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/resurse/imagini/mingi1.jpg" alt="accesorii" height="300" width="300">
+                        <figcaption>Mingi Dunlop Fort Clay Court 4/set</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/resurse/imagini/mingi2.jpg" alt="accesorii" height="300" width="300">
+                        <figcaption>Mingi tenis Wilson RG Clay 4 mingi/cutie</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/resurse/imagini/grip1.jpg" alt="accesorii" height="300" width="300">
+                        <figcaption>Grip tenis Head EXTREME SOFT Roșu</figcaption>
+                    </figure>
                 </div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/IiRGdagtOKE?si=aoafuU-1LMY8f3Se"
-                    name="ifr-video" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            </div>
-        </section>
-
+            
+                <h2>Videoclipuri</h2>
+                <p>Dacă sunteți pasionați de tenis și doriți să vă îmbunătățiți jocul, vă recomandăm următoarele
+                    videoclipuri.
+                    Aici puteți învăța tehnici de bază precum serviciul, <i>forehand</i>-ul și <i>backhand</i>-ul.
+                    Aceste exerciții sunt <s>ușoare</s> si utile atât pentru începători, cât și pentru jucători mai avansați
+                    care vor să își perfecționeze loviturile.&#128513;</p>
+                <div class="container-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IiRGdagtOKE?si=aoafuU-1LMY8f3Se"
+                        name="ifr-video" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="taburi-iframe">
+                        <a href="https://www.youtube.com/embed/IiRGdagtOKE?si=aoafuU-1LMY8f3Se"
+                            target="ifr-video">Serviciul</a>
+                        <a href="https://www.youtube.com/embed/5arVdubK9Pg?si=0akp5UxVOisi5k2R" target="ifr-video">Lovitura
+                            de forehand</a>
+                        <a href="https://www.youtube.com/embed/Ulk_gXK9GrI?si=g_V8uhSZhmUGfpD5" target="ifr-video">Lovitura
+                            de backhand</a><br />
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+    </main>
+        <a href="#top" id="buton-sus" data-tooltip="Înapoi sus">
+            <span class="sageata">&#8593;</span>
+        </a>
+    <footer>
         <p>Popularitatea site-ului:</p>
 
         <meter value="8" min="0" max="10" low="3" high="8" optimum="10"></meter>
-
-    </main>
-    <footer>
         <address>
 
             Telefon: <a href="tel:+40712345678">0712345678</a>

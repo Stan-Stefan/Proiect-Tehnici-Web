@@ -1,3 +1,5 @@
+$nul: 0;
+
 nav{
     --latime-buton: 120px;
     --inaltime-buton: 30px;
@@ -6,12 +8,16 @@ nav{
 
 ul.meniu, ul.meniu  ul{
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: $nul;
+    margin: $nul;
+}
+
+%nu_afiseaza{
+    display: none;
 }
 
 #hamburger, #ch-menu{
-    display: none;
+    @extend %nu_afiseaza;
 }
 
 .text-icon, .imag-icon{
@@ -24,10 +30,25 @@ ul.meniu{
 }
 
 
-ul.meniu  ul{
+ul.meniu{
+    ul{
     display: none;
     animation: animatie_submeniu 1s linear;
-    transform-origin: center top;
+    transform-origin: center top;}
+
+    li{
+    cursor: pointer;
+    width:var(--latime-buton);
+    height:var(--inaltime-buton);
+    background-color: var(--culoare-fundal);
+    border: 1px solid var(--culoare-contur);
+    color: black;
+    text-align: center;
+    line-height: var(--inaltime-buton);
+    /* text-decoration: none; */
+    /* margin-right: 10px; */
+    transition: all 1s linear;
+}
 }
 
 @keyframes animatie_submeniu {
@@ -52,19 +73,7 @@ ul.meniu>li:hover ul{
 }
 
 
-ul.meniu li{
-    cursor: pointer;
-    width:var(--latime-buton);
-    height:var(--inaltime-buton);
-    background-color: var(--culoare-fundal);
-    border: 1px solid var(--culoare-contur);
-    color: black;
-    text-align: center;
-    line-height: var(--inaltime-buton);
-    /* text-decoration: none; */
-    /* margin-right: 10px; */
-    transition: all 1s linear;
-}
+
 
 ul.meniu a{
     text-decoration: none;

@@ -1,66 +1,106 @@
 body{
-    --culoare-fundal: #C2F0D3;
-    --culoare-contur: #31EB75;
-    --culoare3: #31E3EB;
-    --culoare-iconite: #44EB49;
-    --culoare-hover: #5EEBC1;
+    --culoare-fundal: #B1EAE1;
+    --culoare-contur: #4FE89D;
+    --culoare3: #4F9DE8;
+    --culoare4: #4FE869;
+    --culoare5: #18bd41;
+    --culoare-hover: #4FCDE8;
     --margine-pagina:100px;
-    background-color: var(--culoare-fundal);
+    background-color: var(--culoare-hover);
+    --gap-grid: 10px;
+    --padding-zone: 15px;
+    font-family: 'Poppins', sans-serif;
 }
 
 main{
     margin-left: var(--margine-pagina);
     margin-right: var(--margine-pagina);
+    position: relative;
+    overflow: visible;
+}
+
+
+html {
+    font-size: 18px;
+    transition: font-size 0.3s ease;
 }
 
 #grid-pagina > *{
     border:1px solid var(--culoare-contur);
+}
 
+#grid-pagina * {
+    font-size: 1rem; 
+    transition: font-size 0.3s ease; 
 }
 
 #grid-pagina{
     display:grid;
-    gap: 10px;
-    grid-template-columns: 2fr 1fr 2fr;
-    grid-template-areas: "welcome welcome welcome welcome"
-                         "evenimente TopProduse TopProduse anunturi"
-                         "fig1 fig1 fig1 fig1"
-                         "fig2 fig2 fig2 produse"
-                         "fig3 promotii promotii promotii"
-                         "index-intrebari index-intrebari index-intrebari index-intrebari";
+    gap: var(--gap-grid);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "header header header header"
+                         "zona1 zona1 zona1 zona1"
+                         "zona3 zona2 zona2 zona4"
+                         "zona8 zona8 zona8 zona8"
+                         "zona7 zona7 zona5 zona6"
+                         "footer footer footer footer";
+    transition: all 0.3s ease;
 }
 
- 
-#welcome{
-    grid-area: welcome;
+header{
+    grid-area: header;
 }
-#promotii{
-    grid-area: promotii;
+footer{
+    grid-area: footer;
 }
-#anunturi{
-    grid-area: anunturi;
+#zona1{
+    grid-area: zona1;
 }
-#evenimente{
-    grid-area: evenimente;
+#zona5{
+    grid-area: zona5;
 }
-#TopProduse{
-    grid-area: TopProduse;
+#zona4{
+    grid-area: zona4;
 }
- 
-#fig1{
-    grid-area: fig1;
+#zona3{
+    grid-area: zona3;
 }
-#fig2{
-    grid-area: fig2;
+#zona2{
+    grid-area: zona2;
 }
-#fig3{
-    grid-area: fig3;
+#zona8{
+    grid-area: zona8;
 }
-#produse{
-    grid-area: produse;
+
+#grid-galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
-#index-intrebari{
-    grid-area: index-intrebari;
+
+#grid-galerie img {
+  width: auto;       
+  height: auto;      
+  max-width: 100%;   
+}
+
+#zona7{
+    grid-area: zona7;
+}
+
+#zona7 {
+  display: block;
+  gap: 10px;
+}
+
+.produse-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+#zona6{
+    grid-area: zona6;
 }
 
 figure{
@@ -77,82 +117,240 @@ figure.fg-img > img{
     font-style: normal;
 }
 
-/*.taburi-iframe > a{
-    display: inline-block;
-    padding: 10px;
-    background-color: var(--culoare-fundal);
-    border: 1px solid var(--culoare-contur);
-    color: black;
-    text-decoration: none;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    margin-right: 10px;
+#zona1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
 }
-*/
+
+.text {
+  flex: 2;
+}
+
+#dv-prezentare-1 {
+  flex: 1;
+}
 
 .container-iframe {
     display: flex;
     align-items: flex-start;
 }
 
-/* video */
 .container-iframe iframe {
     width: 560px;
     height: 315px;
-
+    border: 5px inset var(--culoare3);
 }
 
-/* butoanele în dreapta, lipite de video */
 .taburi-iframe {
     display: flex;
     flex-direction: column;
 }
 
-/* stil butoane */
 .taburi-iframe a {
     text-decoration: none;
-    background-color: var(--culoare-iconite);
+    background-color: var(--culoare4);
     color: white;
-    padding: 12px 20px;
+    padding: 5px 5px;
     margin: 0;
-    border-radius: 0 5px 5px 0; /* rotunjit doar în dreapta */
-    width: 75px; /* dimensiune fixă de bază */
-    text-align: center ; /* 🔥 textul stă în dreapta */
+    border-radius: 0 5px 5px 0; 
+    width: 100px; 
+    text-align: center;
     overflow: hidden;
-    
-    /* IMPORTANT pentru animație */
-    transition: all 0.8s ease;
+    transition: all 0.3s ease;
     transform-origin: left;
+    border: 4px double var(--culoare3); 
+    border-left: none;
 }
-
-/* hover - efect de "extindere" */
 .taburi-iframe a:hover {
-    width: 100px; /* crește în dreapta */
+    width: 120px;
+    padding-left: 25px;
     background-color: var(--culoare-contur);
+    border-color: var(--culoare3);
 }
 
-@media screen and (max-witdh:1200px) {
+#tabel caption {
+    caption-side: bottom;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#tabel {
+    border-collapse: collapse;
+    min-width: 600px;
+    }
+
+#tabel thead th {
+    border: 3px solid var(--culoare-contur);
+    padding: 10px;
+}
+
+#tabel td, #tabel tfoot td {
+    border: 1px solid var(--culoare-contur);
+    padding: 10px;
+}
+
+#tabel tbody tr:nth-of-type(odd) {
+    color: var(--culoare3);
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.15);
+}
+
+#tabel tbody tr:nth-of-type(even) {
+    color: var(--culoare4);
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.25);
+}
+
+#tabel tbody tr {
+    transition: all 0.75s ease-in-out;
+}
+
+#tabel tbody tr:hover {
+    background-color: rgba(79, 232, 157, 0.2);
+    font-size: 1.2em; 
+}
+
+.tabel-scroll {
+    width: 100%;
+}
+
+#buton-sus {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+#buton-sus::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background-color: var(--culoare-hover);
+
+    border-top: 4px solid var(--culoare3);
+    border-bottom: 4px solid var(--culoare3);
+    border-left: 4px solid var(--culoare4);
+    border-right: 4px solid var(--culoare4);
+
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.3);
+
+    transition: transform 0.6s ease;
+    z-index: 1;
+}
+
+#buton-sus:hover::before {
+    transform: rotate(90deg);
+}
+
+#buton-sus .sageata {
+    position: relative;
+    z-index: 2;
+    font-size: 30px;
+    color: white;
+    filter: blur(2px);
+    transition: filter 0.6s ease;
+}
+
+#buton-sus:hover .sageata {
+    filter: blur(0);
+}
+
+#buton-sus::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    z-index: 3;
+}
+
+#buton-sus:hover::after {
+    opacity: 1;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    min-width: 150px;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    min-width: 150px;
+    height: auto;
+}
+
+
+@media screen and (max-width:1200px) {
     body{
-        --margine-pagina:80px;
+        --margine-pagina: 60px;
+        --gap-grid: 6px;
+    }
+
+    html {
+        font-size: 16px;
     }
 
     #grid-pagina{
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "welcome welcome welcome"
-                         "evenimente TopProduse anunturi"
-                         "fig1 fig1 fig1"
-                         "fig2 fig2 produse"
-                         "fig3 promotii promotii"
-                         "index-intrebari index-intrebari index-intrebari";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+                         "zona1 zona1 zona1"
+                         "zona3 zona2 zona4"
+                         "zona8 zona8 zona8"
+                         "zona7 zona5 zona6"
+                         "footer footer footer";
 }
 }
 
-@media screen and (max-witdh:700px) {
+header, footer, #grid-pagina > * {
+    background-color: #B1EAE1; 
+    border: 2px solid #4FE89D;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    padding: var(--padding-zone);
+}
+
+@media screen and (max-width:700px) {
     body{
-        --margine-pagina:50px;
+        --margine-pagina: 20px;
+        --gap-grid: 3px;
     }
 
-    grid-pagina{
+    html {
+        font-size: 14px;
+    }
+
+    #grid-pagina * {
+        transition: none;
+    }
+
+    #grid-pagina{
+        display: block;
+    }
+
+    .tabel-scroll {
+        overflow-x: auto;
+    }
+
+    #zona1 {
         display: block;
     }
 }
