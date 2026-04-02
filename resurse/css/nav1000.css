@@ -1,3 +1,53 @@
-.text-icon{
+ul.meniu > li {
+    width: 150px;
+    height: var(--inaltime-buton);
+    font-size: 0.9rem;
+}
+
+.text-icon {
+    display: flex;
+}
+
+ul.meniu > li > .text-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+ul.meniu > li > .text-icon span {
     display: none;
+}
+
+ul.meniu > li > ul a {
+    font-size: 0.9rem;
+}
+
+ul.meniu > li > ul {
+    min-width: 150px;
+    width: max-content;
+}
+
+ul.meniu > li > ul li {
+    width: 150px;
+}
+
+ul.meniu > li > ul li a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+}
+
+ul.meniu > li > .text-icon,
+ul.meniu > li > .text-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

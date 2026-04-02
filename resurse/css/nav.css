@@ -1,80 +1,137 @@
-nav{
-    --latime-buton: 150px;
-    --inaltime-buton: 30px;
-    background-color: var(--culoare-contur);
+nav {
+  --latime-buton: 170px;
+  --inaltime-buton: 48px;
+  --inaltime-bara: 6px;
+  background-color: var(--culoare-fundal);
+  position: relative;
+  z-index: 100;
 }
 
-ul.meniu, ul.meniu  ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+ul.meniu,
+ul.meniu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-#hamburger, #ch-menu{
-    display: none;
+ul.meniu > li > .text-icon a,
+ul.meniu > li > .imag-icon a, ul.meniu > li > .text-icon,
+ul.meniu > li > .imag-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.text-icon, .imag-icon{
-    display: inline-block;
+#hamburger,
+#ch-menu {
+  display: none;
 }
 
-ul.meniu{
-    display: flex;
-    position: relative;
+.text-icon {
+  display: flex;
 }
 
-
-ul.meniu  ul{
-    display: none;
-    animation: animatie_submeniu 1s linear;
-    transform-origin: center top;
+.imag-icon {
+  display: none;
 }
 
-@keyframes animatie_submeniu {
-    0%{
-        opacity: 0;
-        transform: scale(0,0);
-    }
-    50%{
-        transform: scale(0.5,1);
-    }
-    100%{
-        opacity: 1;
-        transform: scale(1,1);
-    }
+ul.meniu {
+  display: flex;
+  position: relative;
+  background-color: var(--culoare-fundal);
+}
+ul.meniu > li {
+  position: relative;
+  width: var(--latime-buton);
+  height: var(--inaltime-buton);
+  background-color: var(--culoare-fundal);
+  color: black;
+  cursor: pointer;
+  overflow: visible;
+  border: none;
+}
+ul.meniu > li > .text-icon,
+ul.meniu > li > .imag-icon {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  gap: 8px;
+  box-sizing: border-box;
+}
+ul.meniu > li > .text-icon a,
+ul.meniu > li > .imag-icon a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  gap: 8px;
+}
+ul.meniu > li > ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: scaleY(0);
+  transform-origin: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.35s ease, opacity 0.35s ease, visibility 0.35s ease;
+  z-index: 20;
 }
 
-
-ul.meniu>li:hover ul{
-    display: block;
-    position: absolute;
-    z-index: 10;
+ul.meniu > li:nth-child(2)::after,
+ul.meniu > li:nth-child(5)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: var(--inaltime-bara);
+  background: linear-gradient(90deg, var(--culoare-fundal) 50%, var(--culoare3));
+  transform: scaleX(0);
+  transform-origin: right;
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 1;
+  pointer-events: none;
 }
 
-
-ul.meniu li{
-    cursor: pointer;
-    width:var(--latime-buton);
-    height:var(--inaltime-buton);
-    background-color: var(--culoare-fundal);
-    border: 1px solid var(--culoare-contur);
-    color: black;
-    text-align: center;
-    line-height: var(--inaltime-buton);
-    /* text-decoration: none; */
-    /* margin-right: 10px; */
-    transition: all 1s linear;
+ul.meniu > li:nth-child(2):hover::after,
+ul.meniu > li:nth-child(5):hover::after {
+  transform: scaleX(1.5);
+  opacity: 1;
 }
 
-ul.meniu a{
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    width: 100%;
-    height: 100%;
+ul.meniu > li:nth-child(1):hover > ul,
+ul.meniu > li:nth-child(3):hover > ul,
+ul.meniu > li:nth-child(4):hover > ul {
+  transform: scaleY(1);
+  opacity: 1;
+  visibility: visible;
 }
 
-ul.meniu li:hover{
-    background-color: var(--culoare-contur);
-    color: white;
+ul.meniu ul li {
+  width: 100%;
 }
+
+ul.meniu ul li a {
+  display: block;
+  width: 100%;
+  height: var(--inaltime-buton);
+  line-height: var(--inaltime-buton);
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--culoare-fundal);
+  color: black;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul.meniu ul li a:hover {
+  background-color: var(--culoare3);
+  color: white;
+}
+
+/*# sourceMappingURL=nav.css.map */

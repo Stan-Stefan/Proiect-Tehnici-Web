@@ -1,0 +1,120 @@
+@media print {
+
+    header, nav, #hamburger, #ch-menu,
+    ul.meniu {
+        display: none;
+        height: 0;
+        min-height: 0;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    img, iframe, picture, source,
+    figure, figcaption, #dv-prezentare, #dv-prezentare-1,
+	#grid-galerie, .container-iframe,
+    .taburi-iframe {
+        display: none;
+        visibility: hidden;
+    }
+
+    #buton-sus,
+    a[href="#top"],
+    a[href="#titlu"] {
+        display: none;
+    }
+
+    a,
+    a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    * {
+        background-image: none;
+        box-shadow: none;
+        text-shadow: none;
+    }
+
+    html,
+    body {
+        width: 210mm;
+        overflow: visible;
+        background: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        margin: 0;
+        padding: 0;
+    }
+
+    #banner {
+		display: block;
+
+		position: absolute;
+		top: 0.5cm;
+		left: 10%;
+		width: 80%;
+
+		text-align: center;
+		border: 2px dotted black;
+		padding: 0.3cm;
+
+		background: white;
+	}
+
+	h1 {
+		margin-top: 50%;
+		text-align: center;
+		text-decoration: underline;
+		font-size: 2.5rem;
+		page-break-after: always;
+	}
+
+    #grid-pagina {
+        display: block;
+    	page-break-before: always;
+    }
+
+    footer {
+		break-before: page;
+        page-break-before: always;
+    }
+
+    #watermark {
+		display: block;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		width: 100px;
+		height: 2cm;
+		color: black;
+	}
+
+	#watermark::after {
+		content: "Stan Stefan";
+		display: block;
+		opacity: 0.65;
+		border: 3px double black;
+		box-sizing: border-box;
+		background: white;
+	}
+}
+
+@page {
+    size: A4 portrait;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+}
+
+@page:left {
+    margin-left: 2.5cm;
+    margin-right: 0.5cm;
+}
+
+@page:right {
+    margin-left: 0.5cm;
+    margin-right: 2.5cm;
+}

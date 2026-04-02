@@ -287,14 +287,7 @@ figure.fg-img > img{
 img {
     width: 100%;
     max-width: 400px;
-    min-width: 150px;
-    height: auto;
-}
-
-img {
-    width: 100%;
-    max-width: 400px;
-    min-width: 150px;
+    min-width: 100px;
     height: auto;
 }
 
