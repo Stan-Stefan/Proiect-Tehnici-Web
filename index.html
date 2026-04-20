@@ -124,14 +124,17 @@
                 <div id="dv-prezentare-1">
                     <div id="dv-prezentare">
                         <figure>
-                            <a href="/resurse/imagini/tenis1.jpg" download="tenis1.jpg">
+                            <a href="/resurse/imagini/tenis1.jpg" target="_blank">
                                 <picture>
                                     <source srcset="/resurse/imagini/tenis3.png" media="(max-width:700px)" />
-                                    <source srcset="/resurse/imagini/tenis2.jpg"
-                                        media="(max-width:1200px)" />
+                                    <source srcset="/resurse/imagini/tenis2.jpg" media="(max-width:1200px)" />
                                     <img src="/resurse/imagini/tenis1.jpg" alt="teren" title="O racheta cu o minge de tenis" style="width:100%">
                                 </picture>
-                            <br>Descarca imagine
+                            </a>
+
+                            <a href="/resurse/imagini/tenis1.jpg" download="tenis1.jpg">
+                                Descarcă imagine
+                            </a>
                             </a>
                             <figcaption>Racheta de tenis</figcaption>
                         </figure>
@@ -382,6 +385,28 @@
                     Aici puteți învăța tehnici de bază precum serviciul, <i>forehand</i>-ul și <i>backhand</i>-ul.
                     Aceste exerciții sunt <s>ușoare</s> si utile atât pentru începători, cât și pentru jucători mai avansați
                     care vor să își perfecționeze loviturile.&#128513;</p>
+                    <div class="container-video-vtt">
+                        <h3>Videoclip demonstrativ cu subtitrări</h3>
+                        <video id="video-vtt" controls preload="auto" poster="/resurse/imagini/serviciu.png">
+                            <source src="/resurse/video/serviciu.mp4" type="video/mp4">
+                            <source src="/resurse/video/serviciu.ogv" type="video/ogg">
+
+                            <track
+                                src="/resurse/video/tracks/serviciu-ro.vtt"
+                                kind="subtitles"
+                                srclang="ro"
+                                label="Română"
+                                default>
+
+                            <track
+                                src="/resurse/video/tracks/serviciu-en.vtt"
+                                kind="subtitles"
+                                srclang="en"
+                                label="English">
+
+                            Browserul tău nu suportă elementul video.
+                        </video>
+                    </div>
                 <div class="container-iframe">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/IiRGdagtOKE?si=aoafuU-1LMY8f3Se"
                         name="ifr-video" title="YouTube video player" frameborder="0"
@@ -395,7 +420,6 @@
                         <a href="https://www.youtube.com/embed/Ulk_gXK9GrI?si=g_V8uhSZhmUGfpD5" target="ifr-video">Lovitura
                             de backhand</a><br />
                     </div>
-                    
                 </div>
             </section>
         </div>
