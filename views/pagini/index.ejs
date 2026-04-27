@@ -23,8 +23,7 @@
                         <h2>Bine ați venit</h2>
                         <p class="subtitlu">Prezentarea magazinului</p>
                     </hgroup>
-
-                    <p class="intro">Bine ai venit la RacketShot, magazin tenis online dedicat tuturor pasionaților de sport și performanță. În magazinul nostru vei găsi o gamă variată de produse, de la rachetă de tenis și mingi, până la îmbrăcăminte tenis, adidași tenis și genți special concepute pentru transportul echipamentului.<br>
+                    <p class="intro">Bine ai venit la RacketShot, magazin tenis online dedicat tuturor pasionaților de sport și performanță. În magazinul nostru vei găsi o gamă variată de produse, de la rachetă de tenis și mingi, până la îmbrăcăminte tenis, adidași tenis și genți special concepute pentru transportul echipamentului.</p><br>
                     <div class="intro-oferte">
                         <div>Rachete</div>
                         <div>Mingi</div>
@@ -50,7 +49,6 @@
 
                             <a href="/resurse/imagini/tenis1.jpg" download="tenis1.jpg">
                                 Descarcă imagine
-                            </a>
                             </a>
                             <figcaption>Racheta de tenis</figcaption>
                         </figure>
@@ -90,6 +88,16 @@
                         <dd>Reduc vibrațiile la impactul cu mingea.</dd>
                     </dl>
                 </article>
+                <div class="card my-3" style="max-width: 24rem;">
+                    <div class="card-body">
+                        <h2 class="card-title">Ofertă RacketShot</h2>
+                        <span class="badge text-bg-secondary mb-2">Nou</span>
+                        <p class="card-text">
+                            Descoperă echipamente de tenis potrivite pentru antrenament și competiții.
+                        </p>
+                        <a href="#zona7" class="btn btn-primary">Vezi produse</a>
+                    </div>
+                </div>
             </section>
             <section id="zona7">
                 <h2>Produsele noastre</h2>
@@ -208,6 +216,7 @@
                 <h2 class="fg-img">Anunțuri</h2>
                 <p><time datetime="2025-07-20">20 iulie 2025</time> <strong>ATENTIE!!!</strong> Am adăugat o nouă
                     colecție de rachete pentru sezonul 2025.</p>
+                <hr class="hr-stilizat">
                 <p><time datetime="2024-05-05">5 mai 2024</time> Reduceri speciale la mingile de tenis.</p>
                 <p><time datetime="2024-03-10">10 martie 2024</time> Am adăugat echipamente noi pentru jucători
                     începători.</p>
@@ -259,41 +268,12 @@
                 <details>
                     <summary>Oferiți și accesorii pentru rachete?</summary>
                     <p>Da! În magazinul nostru găsiți gripuri, racordaje, amortizoare de vibrații și huse pentru
-                        rachete.!</p>
+                        rachete.</p>
                 </details>
             </section>
             <section id="zona8">
                 <h2>Galerie</h2>
-                <div id="grid-galerie">
-                    <figure id="fig1" class="fg-img">
-                        <img src="/resurse/imagini/racheta1.png" alt="rachete" height="300" width="175">
-                        <figcaption>Rachetă Head Radical Team L</figcaption>
-                    </figure>
-                    <figure id="fig2" class="fg-img">
-                        <img src="/resurse/imagini/racheta2.jpg" alt="rachete" height="300" width="250">
-                        <figcaption>Rachetă Wilson Blade 25 V9.0</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="/resurse/imagini/pantofi1.png" alt="pantofi" height="250" width="300">
-                        <figcaption>Pantofi Tenis Asics Court FF 3 Novak Clay Night Black/Prism Gold</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="/resurse/imagini/imbracaminte1.jpg" alt="imbracaminte" height="300" width="275">
-                        <figcaption>Yonex YM 0029 - Tricou tenis bărbați</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="/resurse/imagini/mingi1.jpg" alt="accesorii" height="300" width="300">
-                        <figcaption>Mingi Dunlop Fort Clay Court 4/set</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="/resurse/imagini/mingi2.jpg" alt="accesorii" height="300" width="300">
-                        <figcaption>Mingi tenis Wilson RG Clay 4 mingi/cutie</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="/resurse/imagini/grip1.jpg" alt="accesorii" height="300" width="300">
-                        <figcaption>Grip tenis Head EXTREME SOFT Roșu</figcaption>
-                    </figure>
-                </div>
+                   <%- include('../fragmente/galerie.ejs') %>
             
                 <h2>Videoclipuri</h2>
                 <p>Dacă sunteți pasionați de tenis și doriți să vă îmbunătățiți jocul, vă recomandăm următoarele
@@ -301,7 +281,21 @@
                     Aici puteți învăța tehnici de bază precum serviciul, <i>forehand</i>-ul și <i>backhand</i>-ul.
                     Aceste exerciții sunt <s>ușoare</s> si utile atât pentru începători, cât și pentru jucători mai avansați
                     care vor să își perfecționeze loviturile.&#128513;</p>
-                    <div class="container-video-vtt">
+                <div class="container-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IiRGdagtOKE?si=aoafuU-1LMY8f3Se"
+                        name="ifr-video" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="taburi-iframe">
+                        <a href="https://www.youtube.com/embed/IiRGdagtOKE?si=aoafuU-1LMY8f3Se"
+                            target="ifr-video">Serviciul</a>
+                        <a href="https://www.youtube.com/embed/5arVdubK9Pg?si=0akp5UxVOisi5k2R" target="ifr-video">Lovitura
+                            de forehand</a>
+                        <a href="https://www.youtube.com/embed/Ulk_gXK9GrI?si=g_V8uhSZhmUGfpD5" target="ifr-video">Lovitura
+                            de backhand</a><br />
+                    </div>
+                </div>
+                <div class="container-video-vtt">
                         <h3>Videoclip demonstrativ cu subtitrări</h3>
                         <video id="video-vtt" controls preload="auto" poster="/resurse/imagini/serviciu.png">
                             <source src="/resurse/video/serviciu.mp4" type="video/mp4">
@@ -323,20 +317,6 @@
                             Browserul tău nu suportă elementul video.
                         </video>
                     </div>
-                <div class="container-iframe">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IiRGdagtOKE?si=aoafuU-1LMY8f3Se"
-                        name="ifr-video" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <div class="taburi-iframe">
-                        <a href="https://www.youtube.com/embed/IiRGdagtOKE?si=aoafuU-1LMY8f3Se"
-                            target="ifr-video">Serviciul</a>
-                        <a href="https://www.youtube.com/embed/5arVdubK9Pg?si=0akp5UxVOisi5k2R" target="ifr-video">Lovitura
-                            de forehand</a>
-                        <a href="https://www.youtube.com/embed/Ulk_gXK9GrI?si=g_V8uhSZhmUGfpD5" target="ifr-video">Lovitura
-                            de backhand</a><br />
-                    </div>
-                </div>
             </section>
         </div>
     </main>

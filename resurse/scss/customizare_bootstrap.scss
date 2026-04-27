@@ -1,0 +1,45 @@
+@use '../../node_modules/bootstrap/scss/bootstrap.scss' with 
+(
+    $primary: #4F9DE8,
+    $secondary: #4FE89D,
+    $success: #4FE869,
+    $info: #4FCDE8,
+    $light: #B1EAE1,
+    $dark: #123f36,
+
+    $body-bg: #B1EAE1,
+    $body-color: #123f36,
+
+    $font-family-base: ("Trebuchet MS", Arial, sans-serif),
+
+    $h1-font-size: 2.4rem,
+    $h2-font-size: 2rem,
+    $h3-font-size: 1.6rem,
+    $h4-font-size: 1.35rem,
+
+    $border-radius: 1rem,
+    $border-radius-sm: 0.5rem,
+    $border-radius-lg: 1.5rem,
+
+    $grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 750px,
+        lg: 1050px,
+        xl: 1300px,
+        xxl: 1500px
+    ),
+
+    $container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 1000px,
+        xl: 1200px,
+        xxl: 1400px
+    ),
+
+    $btn-border-radius: 1rem,
+    $btn-font-weight: 600,
+    $card-border-radius: 1.5rem
+);
+

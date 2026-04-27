@@ -1,0 +1,137 @@
+{
+    "cale_galerie": "resurse/imagini/galerie",
+    "imagini": [
+        {
+            "cale_relativa": "Accesorii.jpg",
+            "nume": "Jucator de tenis",
+            "descriere": "Accesorii tenis",
+            "timp": "dimineata",
+            "autor": "https://www.flickr.com/people/44259454@N00",
+            "sursa": "https://www.flickr.com/photos/44259454@N00/3247313370/",
+            "licenta": "CC-BY"
+        },
+        {
+            "cale_relativa": "AdidasiTenis.jpg",
+            "nume": "Adidasi tenis",
+            "descriere": "Adidasi tenis",
+            "timp": "zi"
+        },
+        {
+            "cale_relativa": "AdidasiVintage.jpg",
+            "nume": "Adidasi tenis",
+            "descriere": "Adidasi tenis vintage",
+            "timp": "zi",
+            "autor": "https://www.aucklandmuseum.com/collection/object/am_humanhistory-object-817565",
+            "sursa": "https://api.aucklandmuseum.com/id/media/v/538018",
+            "licenta": "CC-BY"
+        },
+        {
+            "cale_relativa": "EchipamentTenis.jpg",
+            "nume": "Jucatoare de tenis",
+            "descriere": "Echipament tenis",
+            "timp": "zi",
+            "autor": "https://www.flickr.com/people/45776673@N04",
+            "sursa": "DE https://www.flickr.com/photos/stevenpisano/15066963696/",
+            "licenta": "CC-BY"
+        },
+        {
+            "cale_relativa": "EchipamentTenis2.jpg",
+            "nume": "Jucatoare de tenis",
+            "descriere": "Echipament negru de tenis",
+            "timp": "zi",
+            "autor": "https://www.flickr.com/people/40136875@N00",
+            "sursa": "https://www.flickr.com/photos/demiace/42819360485/",
+            "licenta": "CC-BY"
+        },
+        {
+            "cale_relativa": "EchipamentTenis3.jpg",
+            "nume": "Jucatoare de tenis",
+            "descriere": "Echipament alb de tenis",
+            "timp": "zi",
+            "autor": "Thomson20192",
+            "sursa": "https://www.flickr.com/photos/93558439@N05/13940237955/",
+            "licenta": "CC-BY"
+        },
+        {
+            "cale_relativa": "GeantaTenis.jpg",
+            "nume": "Jucatoare de tenis in pauza",
+            "descriere": "Prosop si geanta de tenis",
+            "timp": "noapte"
+        },
+        {
+            "cale_relativa": "Grip.jpg",
+            "nume": "Pregatire serviciu",
+            "descriere": "Grip",
+            "timp": "dimineata"
+        },
+        {
+            "cale_relativa": "Hanorac.jpg",
+            "nume": "Hanorac tenis",
+            "descriere": "Hanorac tenis",
+            "timp": "noapte",
+            "autor": "https://commons.wikimedia.org/w/index.php?title=User:YoussefTahoun&action=edit&redlink=1",
+            "sursa": "Own work",
+            "licenta": "CC-BY"
+        },
+        {
+            "cale_relativa": "Jacheta.png",
+            "nume": "Jacheta sport",
+            "descriere": "Jacheta tenis",
+            "timp": "noapte",
+            "autor": "Ingolfson",
+            "sursa": "https://commons.wikimedia.org/wiki/File:Windbreaker_Jacket,_Hood_Outside.jpg",
+            "licenta": "CC-BY"
+        },
+        {
+            "cale_relativa": "MingeTenis.jpg",
+            "nume": "Minge tenis",
+            "descriere": "Minge tenis",
+            "timp": "dimineata"
+        },
+        {
+            "cale_relativa": "MingiTenis.png",
+            "nume": "Mingi tenis",
+            "descriere": "Set mingi de tenis",
+            "timp": "dimineata"
+        },
+        {
+            "cale_relativa": "Prosoape.jpg",
+            "nume": "Prosoape",
+            "descriere": "Prosoape",
+            "timp": "noapte"
+        },
+        {
+            "cale_relativa": "RachetaBabolat.jpg",
+            "nume": "Racheta de tenis",
+            "descriere": "Racheta Babolat",
+            "timp": "dimineata"
+        },
+        {
+            "cale_relativa": "RachetaWilson.JPG",
+            "nume": "Racheta de tenis",
+            "descriere": "Racheta Wilson",
+            "timp": "dimineata"
+        },
+        {
+            "cale_relativa": "SapcaTenis.jpg",
+            "nume": "Sapca tenis",
+            "descriere": "Sapca tenis",
+            "timp": "zi"
+        },
+        {
+            "cale_relativa": "SoseteSport.jpg",
+            "nume": "Sosete sport",
+            "descriere": "Sosete tenis",
+            "timp": "noapte"
+        },
+        {
+            "cale_relativa": "wristabdn.jpg",
+            "nume": "Manseta tenis",
+            "descriere": "Manseta tenis",
+            "timp": "noapte",
+            "autor": "https://www.flickr.com/photos/35034348378@N01",
+            "sursa": "https://www.flickr.com/photos/35034348378@N01/28871260",
+            "licenta": "CC-BY"
+        }
+    ]
+}
